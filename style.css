@@ -326,6 +326,94 @@ width: 100%;
     background: var(--second-bg-color);
 }
 
+#projects {
+    background: #081b29;
+    padding: 2rem, 0; 
+}
+
+#projects h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    align-items: start;
+    justify-items: center;
+    gap: 2.5rem;
+}
+
+.project-list .work {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #081b29;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.project-list .work img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+    transition: 0.5s ease;
+    opacity: 0.7;
+}
+
+.project-list .work:hover img {
+    transform: scale(1.05); 
+}
+
+.project-list .work .layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.project-list .work:hover .layer {
+    opacity: 1;
+}
+
+.project-list .layer h3 {
+    font-size: 1.6rem;
+    margin: 0.3rem 0 1rem;
+    color: white;
+}
+
+.project-list .layer p {
+    color: white;
+    padding: 0 1rem; 
+}
+
+.project-list .layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: #ededed;
+    border-radius: 50%;
+}
+
+.project-list .layer a i {
+    font-size: 2rem;
+    color: #00abf0;
+}
+
 .Contact {
     min-height: auto;
     padding-bottom: 7rem;
