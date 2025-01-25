@@ -115,7 +115,7 @@ body {
 
 .home-content h3 {
     position: relative;
-    font-size: 32px;
+    font-size: 50px;
     font-weight: 700;
     color: #00abf0;
 }
@@ -242,18 +242,13 @@ width: 100%;
   }
   
   .home-content h1 {
-    font-size: 3rem;
+    font-size: 1.8rem;
     margin: 0;
   }
   
   .home-content h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-  }
-  
-  .home-content p {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 70px;
+    margin: 15px 0;
   }
   
   .btn-box {
@@ -474,6 +469,8 @@ width: 100%;
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    max-width: 1500px;
+    text-align: center;
 }
 
 .btn-box.btns {
