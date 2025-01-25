@@ -34,3 +34,13 @@ window.onscroll = () => {
         }
     });
 }
+
+// Select the custom cursor element
+const customCursor = document.getElementById('custom-cursor');
+
+// Update cursor position on mousemove
+document.addEventListener('mousemove', (e) => {
+  const { clientX, clientY } = e;
+  customCursor.style.top = `${clientY}px`;
+  customCursor.style.left = `${clientX}px`;
+});
