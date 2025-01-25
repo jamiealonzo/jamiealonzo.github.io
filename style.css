@@ -63,6 +63,26 @@ body {
     color: #00abf0;
 }
 
+/* Hide the default cursor */
+body {
+    cursor: none;
+  }
+  
+  /* Custom cursor outline */
+  #custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45px; /* Adjust the size of the outline */
+    height: 45px;
+    border: 2px solid #ededed; /* Circle border color and opacity */
+    border-radius: 50%; /* Makes it a circle */
+    pointer-events: none; /* Prevents it from blocking interactions */
+    transform: translate(-50%, -50%); /* Centers the circle on the cursor */
+    z-index: 9999;
+  }
+  
+
 .home {
     height: 100vh;
     display: flex;
