@@ -17,17 +17,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 1.5rem 3rem;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
     transition: .3s;
+
 }
 
-.header {
-    background: #081b29;
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
 }
 
 .logo {
@@ -64,10 +66,40 @@ body {
     padding: 0.5rem 1rem;
 }
 
-.navbar a:hover,
-.navbar a.active {
-    color: #00abf0;
-}
+.burger-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* Hide navbar by default on mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Place below the header */
+      right: 0;
+      background-color: #081b29;
+      width: 100%;
+      padding: 1rem;
+      gap: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      z-index: 999; /* Ensure it overlays content */
+    }
+  
+    .burger-icon {
+      display: block; /* Show burger icon */
+    }
+  
+    .navbar.active {
+      display: flex; /* Show navbar when active */
+    }
+  }
+  
+  
+
 
 /* Hide the default cursor */
 body {
@@ -565,6 +597,43 @@ width: 100%;
     background: #008fc9;
 }
 
+@media (max-width: 768px) {
+    .project-list {
+        gap: 2rem;
+    }
+
+    .project-list .work {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .project-list .work img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .project-list .work .details {
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-list .work .details h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-list .work .details p {
+        font-size: 0.9rem;
+    }
+
+    .project-list .work .details a {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
 
 .Contact {
     min-height: auto;
