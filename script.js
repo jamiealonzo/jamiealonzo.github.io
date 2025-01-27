@@ -44,3 +44,7 @@ document.addEventListener('mousemove', (e) => {
   customCursor.style.top = `${clientY}px`;
   customCursor.style.left = `${clientX}px`;
 });
+
+
+
+  
