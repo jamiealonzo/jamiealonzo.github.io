@@ -1,6 +1,5 @@
-# Portfolio
+# Welcome to my portfolio!
 
-Welcome to my portfolio!
 I’m Jamie Alonzo — an eCommerce Web Developer specializing in Shopify, passionate about turning ideas into sleek, high-performing online stores. This space showcases my latest projects, skills, and ongoing journey as I grow in the world of web development and eCommerce.
 
 Current Status
